@@ -1,0 +1,9 @@
+Tugas Praktikum 1.5 Jawablah pertanyaan berikut!
+
+1. Pernah terjadi error saat salah atau kurang tanda baca seperti "<",">"
+2. Setelah beberapa detik , halaman akan merefresh dan pindah ke halaman : http"//google.co.id
+3. - Tag <thead> = untuk mengelompokkan konten yang terletak di kepala (atas) dalam sebuah tabel
+   - Tag <tbody> = untuk menunjukkan isi tabel
+   - Tag <tr> = tabel row digunakan untuk mendefinisikan baris pada tabel
+   - Tag <th> = tabel heading digunakan untuk membuat judul sebuah table
+   - Tag <td> = tabel data digunakan untuk membuat isi atau baris
