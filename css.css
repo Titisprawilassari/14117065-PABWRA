@@ -1,0 +1,53 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+.tabheader {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#Home { background: url(matahari.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        border: 2px solid black;}
+#MyDiary { background: url(matahari.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        border: 2px solid black;}
+#Contact {background: url(matahari.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        border: 2px solid black;}
+#About {background: url(matahari.jpg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        border: 2px solid black;}
