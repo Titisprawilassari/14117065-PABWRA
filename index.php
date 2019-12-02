@@ -1,34 +1,40 @@
-<?php
-    session_start();
-        session_destroy();
-        header('location:index.php');
-        ?>
-<!DOCTYPE html>
+<?php include("header.php"); ?>
     <html>
-        <head>
-            <title>PHP Login Authentication OOP PABW</title>
-        </head>
+
+    <head>
+        <title>Session PABW</title>
+    </head>
+
     <body>
-        <h1>PHP Login Authentication OOP PABW</h1>
-        <h3><span></span> Login</h3>
-        <form method="POST" action="login.php">
-    <div>
-        <input placeholder="Username" type="text" name="username" autofocus required>
-    </div>
-    <div>
-        <input placeholder="Password" type="password" name="password" required>
-    </div>
-        <button type="submit" name="login"><span></span> Login</button>
+        <form method="post">
+            <?php if($message!="") { ?>
+                <div class="message">
+                    <?php echo $message; ?>
+                </div>
+                <?php } ?>
+                    <table>
+                        <tr>
+                            <td align="center" colspan="2">Enter Login Details</td>
+                        </tr>
+                        <tr>
+                            <td align="right">Username</td>
+                            <td>
+                                <input type="text" name="user_name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Password</td>
+                            <td>
+                                <input type="password" name="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2">
+                                <input type="submit" name="submit" value="Submit">
+                            </td>
+                        </tr>
+                    </table>
         </form>
-<?php
-    if(isset($_SESSION['message'])){
-?>
-    <div>
-        <?php echo $_SESSION['message']; ?>
-    </div>
-<?php
-    unset($_SESSION['message']);
-    }
-?>
     </body>
-</html>
+
+    </html>
